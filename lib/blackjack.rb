@@ -51,27 +51,12 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-# def runner
-#   welcome
-#   number = initial_round
-#   new_number = hit?(number)
-#   display_card_total(new_number)
-#   until new_number > 21
-#     new_number = hit?(new_number)
-#     display_card_total(new_number)
-#   end
-#   end_game(new_number)
-# end
-
-
 def runner
   welcome
   number = initial_round
   new_number = hit?(number)
   display_card_total(new_number)
-  if new_number == 21
-    puts "WINNER!"
-  else
+  until new_number > 21
     new_number = hit?(new_number)
     display_card_total(new_number)
     binding.pry
