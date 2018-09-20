@@ -62,7 +62,8 @@ def runner
   until new_number > 21
     new_number = hit?(new_number)
     display_card_total(new_number)
-    if new_number 
+    if new_number > computer && new_number < 21
+      puts "WINNER"
   end
   end_game(new_number)
 end
