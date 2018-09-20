@@ -59,7 +59,6 @@ def runner
   until new_number > 21
     new_number = hit?(new_number)
     display_card_total(new_number)
-    binding.pry
   end
   end_game(new_number)
 end
