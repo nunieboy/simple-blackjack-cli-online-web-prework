@@ -47,6 +47,9 @@ def invalid_command
   prompt_user
 end
 
+def computer
+  total = deal_card + deal_card
+end
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
@@ -59,6 +62,7 @@ def runner
   until new_number > 21
     new_number = hit?(new_number)
     display_card_total(new_number)
+    if new_number 
   end
   end_game(new_number)
 end
